@@ -46,3 +46,7 @@ then have a try
  $ git reset --hard HEAD^
  $ cat readme.txt
  $ git log
+
+
+在完成了这些修改内容之后
+在提交之前需要先完成一下pull,然后提交
