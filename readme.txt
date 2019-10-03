@@ -11,9 +11,6 @@ git status
 
 
  git commit -m "git tracks changes"
- git remote add origin git@github.com:someone/learngit.git
- git push -u origin master
-
 
 
 
@@ -30,14 +27,32 @@ Initialized empty Git repository in /Users/michael/learngit/.git/
 $ git add readme.txt
 $ git commit -m "wrote a readme file"
 
+
+ 在GitHub上创建repository，然后根据创建的路径上传
+ git remote add origin git@github.com:someone/learngit.git
+ git push -u origin master
+
+
 $ git add readme.txt
 $ git commit -m "append GPL"
 [master 1094adb] append GPL
  1 file changed, 1 insertion(+), 1 deletion(-)
 
+Notice： 1. for the second time to update this file, should add this modified file and then sumbmit then have a try
+         2. 在完成了这些修改内容之后，在提交之前需要先完成一下pull,然后提交
 
-for the second time to update this file, should add this modified file and then sumbmit
-then have a try
+
+
+ $ git log
+ $ git log --pretty=oneline
+
+ $ git reset --hard HEAD^
+ $ cat readme.txt
+ $ git log
+
+
+/*****************************************   补充完成教程内容   *****************************************/
+
 
 检出仓库
 git clone /path/to/repository
@@ -118,17 +133,3 @@ git config format.pretty oneline
 git add -i
 
 教程链接地址：http://www.runoob.com/manual/git-guide/
-
-
-
-
- $ git log
- $ git log --pretty=oneline
-
- $ git reset --hard HEAD^
- $ cat readme.txt
- $ git log
-
-
-在完成了这些修改内容之后
-在提交之前需要先完成一下pull,然后提交
