@@ -53,6 +53,29 @@ Notice： 1. for the second time to update this file, should add this modified f
 
 /*****************************************   补充完成教程内容   *****************************************/
 
+完成git的安装之后 的配置信息
+用户信息
+git config --global user.name "test"
+git confit --global user.email test@hotmail.com
+如果使用了 --global 选项，该命令只需要运行一次，因为之后在该系统上做任何事情，git都会使用这些信息，当想要
+针对特定项目使用不同的用户名和邮件地址时候，可以在那个项目目录下运行不适用 --global 选项来配置，很多GUI工具都会
+在第一次运行时候帮助你配置这些信息
+
+选择使用不同的文本编辑器，可以使用如下命令：
+$git config --global core.editor emacs
+
+检查配置信息
+想要检查配置信息，可以使用 git config --list 命令来列出所有git当时能找到的配置
+$git config --list,
+如果列出重复的变量名，因为git会从不同的文件中读取同一配置，这种情况下， git会使用它找到的每一个变量的最后一个配置
+
+git获取帮助
+git help <version>
+git <verb> --help
+man git-<verb>
+
+config命令的手册
+git help config
 
 检出仓库
 git clone /path/to/repository
