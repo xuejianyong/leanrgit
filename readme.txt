@@ -156,3 +156,9 @@ git config format.pretty oneline
 git add -i
 
 教程链接地址：http://www.runoob.com/manual/git-guide/
+
+
+ssh-keygen -t rsa
+find the user.ssh pub key
+update the website
+ssh -T git@github.com
