@@ -162,3 +162,10 @@ ssh-keygen -t rsa
 find the user.ssh pub key
 update the website
 ssh -T git@github.com
+
+
+git lfs track "*.psd"
+git add .gitattributes
+git add file.psd
+git commit -m "Add design file"
+git push origin master
