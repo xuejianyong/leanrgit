@@ -71,8 +71,6 @@ $ ssh-keygen -t rsa -C "youremail@example.com"
 当然，GitHub允许你添加多个Key。假定你有若干电脑，你一会儿在公司提交，一会儿在家里提交，只要把每台电脑的Key都添加到GitHub，就可以在每台电脑上往GitHub推送了。
 
 
-
-
 选择使用不同的文本编辑器，可以使用如下命令：
 $git config --global core.editor emacs
 
